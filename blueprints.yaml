@@ -1,0 +1,32 @@
+name: Directus Router
+slug: directus2-router
+type: plugin
+version: 2.0.0
+description: redirects expired urls to new routes configured in directus
+icon: plug
+author:
+  name: Erik Konrad
+  email: erik.konrad@zebra.de
+homepage: https://github.com/mindbox/grav-plugin-directus-router
+keywords: grav, plugin, etc
+bugs: https://github.com/mindbox/grav-plugin-directus-router/issues
+docs: https://github.com/mindbox/grav-plugin-directus-router/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+  - { name: directus, version: '>=2.0.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool

@@ -1,0 +1,12 @@
+enabled: true
+track_unknown: false
+mapping:
+  table: routing_table
+  request_field: field_for_deprecated_url
+  target_field: field_for_target_site
+  status_field: field_for_status_code
+  page_instance_field: some_field
+additionalFilters:
+  some_field.id:
+    operator: _eq
+    value: 1
