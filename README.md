@@ -47,6 +47,10 @@ To install the plugin automaticall with `bin/grav install`, add the following to
 ```
 git:
     directus2:
+        url: https://github.com/mindbox/grav-plugin-directus2
+        path: user/plugins/directus2
+        branch: main
+    directus2-router:
         url: https://github.com/mindbox/grav-plugin-directus2-router
         path: user/plugins/directus2-router
         branch: main
